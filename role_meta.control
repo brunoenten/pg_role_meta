@@ -1,0 +1,5 @@
+default_version = '0.1'
+module_pathname = '$libdir/role_meta'
+schema = 'role_meta'
+relocatable = false
+comment = 'Add key/value store to roles'
