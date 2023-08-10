@@ -2,7 +2,8 @@ CREATE FUNCTION role_meta.set_to_role(role_name regrole, _key text, _value text)
     LANGUAGE plpgsql VOLATILE
     AS $_$
   BEGIN
-    EXECUTE format('ALTER ROLE %I SET rolemeta.%s TO %L', role_name, _key, _value);
+    -- Using %s and not %I because role_name is already a valid identifier
+    EXECUTE format('ALTER ROLE %s SET rolemeta.%s TO %L', role_name, _key, _value);
   END;
 $_$;
 

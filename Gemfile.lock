@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/brunoenten/pg_builder.git
-  revision: bf12f3cb48c6e912378192ccb52d55657a2cd03a
+  revision: 2799817aa67adeb49f4c1f62c930142636544aa9
   branch: master
   specs:
     pg_builder (0.1.5)
